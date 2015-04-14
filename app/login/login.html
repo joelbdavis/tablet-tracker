@@ -4,21 +4,21 @@
 <form>
     <label>
         <span>email</span>
-        <input type="text" ng-model="email" />
+        <input type="text" ng-model="LoginCtrl.email" />
     </label>
     <label>
         <span>password</span>
-        <input type="password" ng-model="pass" />
+        <input type="password" ng-model="LoginCtrl.pass" />
     </label>
     <label ng-cloak ng-show="createMode">
         <span>confirm pass</span>
-        <input type="password" ng-model="confirm" />
+        <input type="password" ng-model="LoginCtrl.confirm" />
     </label>
-    <button ng-click="login(email, pass)" ng-hide="createMode">Log In</button>
-    <button ng-click="createMode = true" ng-hide="createMode">Register</button>
-    <button ng-cloak ng-show="createMode" ng-click="createAccount()">Create Account</button>
-    <button ng-cloak ng-show="createMode" ng-click="createMode = false">Cancel</button>
+    <button ng-click="LoginCtrl.login(LoginCtrl.email, LoginCtrl.pass)" ng-hide="LoginCtrl.createMode">Log In</button>
+    <button ng-click="LoginCtrl.createMode = true" ng-hide="LoginCtrl.createMode">Register</button>
+    <button ng-cloak ng-show="LoginCtrl.createMode" ng-click="LoginCtrl.createAccount()">Create Account</button>
+    <button ng-cloak ng-show="LoginCtrl.createMode" ng-click="LoginCtrl.createMode = false">Cancel</button>
 
-    <p ng-show="err" class="error">{{err}}</p>
+    <p ng-show="err" class="error">{{LoginCtrl.err}}</p>
 </form>
 

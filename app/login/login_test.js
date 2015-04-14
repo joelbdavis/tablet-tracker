@@ -1,8 +1,8 @@
 
-describe('myApp.login', function() {
+describe('app.login', function() {
   beforeEach(function() {
-    module('myApp');
-    module('myApp.login');
+    module('app');
+    module('app.login');
   });
 
   describe('LoginCtrl', function() {

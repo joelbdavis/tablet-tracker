@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp.config', [])
+angular.module('app.config', [])
 
   // version of this seed app is compatible with angularFire 1.0.0
   // see tags for other versions: https://github.com/firebase/angularFire-seed/tags
@@ -11,7 +11,7 @@ angular.module('myApp.config', [])
   .constant('loginRedirectPath', '/login')
 
   // your Firebase data URL goes here, no trailing slash
-  .constant('FBURL', 'https://angularfire-seed-dev.firebaseio.com')
+  .constant('FBURL', 'https://blinding-heat-4445.firebaseio.com')
 
   // double check that the app has been configured before running it and blowing up space and time
   .run(['FBURL', '$timeout', function(FBURL, $timeout) {

@@ -81,7 +81,7 @@ Now browse to the app at `http://localhost:8000/app/index.html`.
 ## Directory Layout
 
     app/                  --> all of the files to be used in production
-      app.js              --> application
+      app.module.js              --> application
       config.js           --> where you configure Firebase and auth options
       app.css             --> default stylesheet
       index.html          --> app layout file (the main html template file of the app)
