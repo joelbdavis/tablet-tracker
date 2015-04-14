@@ -10,7 +10,7 @@
         <span>password</span>
         <input type="password" ng-model="LoginCtrl.pass" />
     </label>
-    <label ng-cloak ng-show="createMode">
+    <label ng-cloak ng-show="LoginCtrl.createMode">
         <span>confirm pass</span>
         <input type="password" ng-model="LoginCtrl.confirm" />
     </label>
@@ -19,6 +19,6 @@
     <button ng-cloak ng-show="LoginCtrl.createMode" ng-click="LoginCtrl.createAccount()">Create Account</button>
     <button ng-cloak ng-show="LoginCtrl.createMode" ng-click="LoginCtrl.createMode = false">Cancel</button>
 
-    <p ng-show="err" class="error">{{LoginCtrl.err}}</p>
+    <p ng-show="LoginCtrl.err" class="error">{{LoginCtrl.err}}</p>
 </form>
 

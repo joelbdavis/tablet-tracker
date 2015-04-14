@@ -14,11 +14,11 @@
 				});
 		};
 
-		Login.createAccount = function (email, pass) {
+		Login.createAccount = function (email, pass, confirm) {
 			Login.createMode = true;
 			Login.err = null;
 
-			if (assertValidAccountProps(email, pass)) {
+			if (assertValidAccountProps(email, pass, confirm)) {
 				// create user credentials in Firebase auth system
 				Auth.$createUser({email: email, password: pass})
 					.then(function () {

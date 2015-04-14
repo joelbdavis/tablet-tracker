@@ -17,6 +17,15 @@
 			}
 		});
 
+		Object.defineProperty(LoginCtrl, 'err', {
+			get: function () {
+				return Login.err;
+			},
+			set: function (val) {
+				Login.err = val;
+			}
+		});
+
 		LoginCtrl.login = function () {
 			Login.login(LoginCtrl.email, LoginCtrl.pass);
 		};
